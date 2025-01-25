@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
 # Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.krmjzdinzjjrqqtmpdue:2aEQKNbD0HMI9eYS@aws-0-ap-south-1.pooler.supabase.com:6543/postgres'
 db = SQLAlchemy(app)
 
 # Mail Configuration
